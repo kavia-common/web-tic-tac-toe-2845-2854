@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Minimal Next.js App",
-  description: "Ultra-minimal Next.js application",
+  title: "Tic Tac Toe",
+  description: "A minimalistic, responsive two-player Tic Tac Toe built with Next.js",
+  applicationName: "Tic Tac Toe",
+  authors: [{ name: "App Generator" }],
+  keywords: ["tic tac toe", "game", "next.js", "react"],
+  themeColor: "#FFFFFF",
+  viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
 };
 
 export default function RootLayout({
@@ -13,9 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>
-        {children}
-      </body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }
